@@ -39,8 +39,8 @@ Unzip the files and copy them to the C:\tensorflow1\models\research\object_detec
   If you get any errors while installing libraries, try to install them from another source.
   If you want to work with cpu, install tensorflow for cpu.
   Make sure all libraries installed successfully
-# 7-) !! IMPORTANT. type this command to cmd; 
-  set PYTHONPATH=C:\tensorflow1\models;C:\tensorflow1\models\research;C:\tensorflow1\models\research\slim
+# 7-) !! IMPORTANT type this command to cmd:
+# set PYTHONPATH=C:\tensorflow1\models;C:\tensorflow1\models\research;C:\tensorflow1\models\research\slim;
   If you crated your models file in anoter location, change the directory in the command.
   WHENEVER YOU ACTIVATE THE VIRTUAL ENVIRONMENT tensorflow1, YOU NEED TO TYPE THIS COMMAND AGAIN !!!!.
   
