@@ -12,9 +12,14 @@ When these steps are finished there should be a path like this 'C:\tensorflow1\m
 # 2-) Download Tensorflow FASTER R-CNN API: faster_rcnn_inception_v2_coco from https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md
 Unzip the file and copy it to C:\tensorflow1\models\research\object_detection folder or copy it to place where unzipped the models file in step 1.
 
+# AFTER 2 STEPS, YOUR FILE SHOULD BE LOOK LIKE THIS
+![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/modelsfile.JPG)
 
 # 3-) Download one of the object_detection.zip or object_detection.rar
 Unzip the files and copy them to the C:\tensorflow1\models\research\object_detection or copy it to place where unzipped the models file in step 1. Replace all files.
+
+# AFTER 3. STEPS, YOUR FILE SHOULD BE LOOK LIKE THIS
+![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/object_detectionfile.JPG)
 
 # 4-) Download and install Anaconda from https://www.anaconda.com/
 
@@ -34,10 +39,13 @@ Unzip the files and copy them to the C:\tensorflow1\models\research\object_detec
   If you get any errors while installing libraries, try to install them from another source.
   If you want to work with cpu, install tensorflow for cpu.
   Make sure all libraries installed successfully
-# 7-) !! IMPORTANT. type this command to cmd; set PYTHONPATH=C:\tensorflow1\models;C:\tensorflow1\models\research;C:\tensorflow1\models\research\slim
+# 7-) !! IMPORTANT. type this command to cmd; 
+  set PYTHONPATH=C:\tensorflow1\models;C:\tensorflow1\models\research;C:\tensorflow1\models\research\slim
   If you crated your models file in anoter location, change the directory in the command.
   WHENEVER YOU ACTIVATE THE VIRTUAL ENVIRONMENT tensorflow1, YOU NEED TO TYPE THIS COMMAND AGAIN !!!!.
- 
+  
+ ![alt text](https://github.com/arthahttps://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R CNN/blob/master/activateenvandpythonpath.JPG)
+
 # 8-) Compile the protobufs, type this command to change directory cd C:\tensorflow1\models\research, 
  Then type this to cmd, protoc -- python_out=. .\object_detection\protos\anchor_generator.proto .\object_detection\protos\argmax_matcher.proto .\object_detection\protos\bipartite_matcher.proto .\object_detection\protos\box_coder.proto .\object_detection\protos\box_predictor.proto .\object_detection\protos\eval.proto .\object_detection\protos\faster_rcnn.proto .\object_detection\protos\faster_rcnn_box_coder.proto .\object_detection\protos\grid_anchor_generator.proto .\object_detection\protos\hyperparams.proto .\object_detection\protos\image_resizer.proto .\object_detection\protos\input_reader.proto .\object_detection\protos\losses.proto .\object_detection\protos\matcher.proto .\object_detection\protos\mean_stddev_box_coder.proto .\object_detection\protos\model.proto .\object_detection\protos\optimizer.proto .\object_detection\protos\pipeline.proto .\object_detection\protos\post_processing.proto .\object_detection\protos\preprocessor.proto .\object_detection\protos\region_similarity_calculator.proto .\object_detection\protos\square_box_coder.proto .\object_detection\protos\ssd.proto .\object_detection\protos\ssd_anchor_generator.proto .\object_detection\protos\string_int_label_map.proto .\object_detection\protos\train.proto .\object_detection\protos\keypoint_box_coder.proto .\object_detection\protos\multiscale_anchor_generator.proto .\object_detection\protos\graph_rewriter.proto
 
