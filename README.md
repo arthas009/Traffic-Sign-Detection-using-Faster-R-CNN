@@ -123,6 +123,15 @@ Unzip the files and copy them to the C:\tensorflow1\models\research\object_detec
           }
           !!WARNING, NAMES AND ITEM COUND SHOULD BE EQUAL TO THE NUMBERS AND NAMES YOU DEFINED IN STEP 12
           
+   
+   
+  # EXAMPLE generate_tfredocr.py and labelmap.pbtxt
+  
+  ![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/generatetfrecord.JPG)
+  
+  ![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/labelmap.pbtx.JPG)
+   
+   
   # 15-) To start training, you must do this;
          Go to the C:\tensorflow1\models\research\object_detection\samples\configs
          Copy faster_rcnn_inception_v2_pets.config and paste it to object_detection\training folder.
