@@ -18,7 +18,7 @@ Unzip the file and copy it to C:\tensorflow1\models\research\object_detection fo
 # 3-) Download one of the object_detection.zip or object_detection.rar
 Unzip the files and copy them to the C:\tensorflow1\models\research\object_detection or copy it to place where unzipped the models file in step 1. Replace all files.
 
-# AFTER 3. STEPS, YOUR FILE SHOULD BE LOOK LIKE THIS
+# AFTER 3. STEPS, YOUR FILE SHOULD LOOK LIKE THIS
 ![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/object_detectionfile.JPG)
 
 # 4-) Download and install Anaconda from https://www.anaconda.com/
