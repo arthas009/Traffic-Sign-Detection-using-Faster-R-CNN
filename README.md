@@ -21,31 +21,32 @@ Unzip the files and copy them to the C:\tensorflow1\models\research\object_detec
 # 5-) Create a virtual environment of anaconda. Type this command to cmd. conda create -n tensorflow1 pip python=3.6
 
 # 6-) Download and install python libraries needed. First, activate your virtual environment using this command in cmd; activate tensorflow1
-  It should be look like this;
-  (tensorflow1) C:\> pip install --ignore-installed --upgrade tensorflow-gpu
-  (tensorflow1) C:\> conda install -c anaconda protobuf
-  (tensorflow1) C:\> pip install pillow
-  (tensorflow1) C:\> pip install lxml
-  (tensorflow1) C:\> pip install jupyter
-  (tensorflow1) C:\> pip install matplotlib
-  (tensorflow1) C:\> pip install pandas
-  (tensorflow1) C:\> pip install opencv-python
+  It should be look like this; (tensorflow1) C:\>
+   pip install --ignore-installed --upgrade tensorflow-gpu
+   conda install -c anaconda protobuf
+   pip install pillow
+   pip install lxml
+   pip install jupyter
+   pip install matplotlib
+   pip install pandas
+   pip install opencv-python
   
   If you get any errors while installing libraries, try to install them from another source.
   If you want to work with cpu, install tensorflow for cpu.
-  
+  Make sure all libraries installed successfully
 # 7-) !! IMPORTANT. type this command to cmd; set PYTHONPATH=C:\tensorflow1\models;C:\tensorflow1\models\research;C:\tensorflow1\models\research\slim
   If you crated your models file in anoter location, change the directory in the command.
   WHENEVER YOU ACTIVATE THE VIRTUAL ENVIRONMENT tensorflow1, YOU NEED TO TYPE THIS COMMAND AGAIN !!!!.
  
-# 8-) Compile the protobufs, type this command to change directory cd C:\tensorflow1\models\research, then type this, protoc --python_out=. .\object_detection\protos\anchor_generator.proto .\object_detection\protos\argmax_matcher.proto .\object_detection\protos\bipartite_matcher.proto .\object_detection\protos\box_coder.proto .\object_detection\protos\box_predictor.proto .\object_detection\protos\eval.proto .\object_detection\protos\faster_rcnn.proto .\object_detection\protos\faster_rcnn_box_coder.proto .\object_detection\protos\grid_anchor_generator.proto .\object_detection\protos\hyperparams.proto .\object_detection\protos\image_resizer.proto .\object_detection\protos\input_reader.proto .\object_detection\protos\losses.proto .\object_detection\protos\matcher.proto .\object_detection\protos\mean_stddev_box_coder.proto .\object_detection\protos\model.proto .\object_detection\protos\optimizer.proto .\object_detection\protos\pipeline.proto .\object_detection\protos\post_processing.proto .\object_detection\protos\preprocessor.proto .\object_detection\protos\region_similarity_calculator.proto .\object_detection\protos\square_box_coder.proto .\object_detection\protos\ssd.proto .\object_detection\protos\ssd_anchor_generator.proto .\object_detection\protos\string_int_label_map.proto .\object_detection\protos\train.proto .\object_detection\protos\keypoint_box_coder.proto .\object_detection\protos\multiscale_anchor_generator.proto .\object_detection\protos\graph_rewriter.proto
+# 8-) Compile the protobufs, type this command to change directory cd C:\tensorflow1\models\research, 
+ Then type this to cmd, protoc -- python_out=. .\object_detection\protos\anchor_generator.proto .\object_detection\protos\argmax_matcher.proto .\object_detection\protos\bipartite_matcher.proto .\object_detection\protos\box_coder.proto .\object_detection\protos\box_predictor.proto .\object_detection\protos\eval.proto .\object_detection\protos\faster_rcnn.proto .\object_detection\protos\faster_rcnn_box_coder.proto .\object_detection\protos\grid_anchor_generator.proto .\object_detection\protos\hyperparams.proto .\object_detection\protos\image_resizer.proto .\object_detection\protos\input_reader.proto .\object_detection\protos\losses.proto .\object_detection\protos\matcher.proto .\object_detection\protos\mean_stddev_box_coder.proto .\object_detection\protos\model.proto .\object_detection\protos\optimizer.proto .\object_detection\protos\pipeline.proto .\object_detection\protos\post_processing.proto .\object_detection\protos\preprocessor.proto .\object_detection\protos\region_similarity_calculator.proto .\object_detection\protos\square_box_coder.proto .\object_detection\protos\ssd.proto .\object_detection\protos\ssd_anchor_generator.proto .\object_detection\protos\string_int_label_map.proto .\object_detection\protos\train.proto .\object_detection\protos\keypoint_box_coder.proto .\object_detection\protos\multiscale_anchor_generator.proto .\object_detection\protos\graph_rewriter.proto
 
 # 9-) Execute the setup files. Type these command to cmd;
-      first: python setup.py build
-      second: python setup.py install
+      first type this to cmd: python setup.py build
+      second type this to cmd: python setup.py install
       
 # 10-) Download the train and test set, and their labels from https://drive.google.com/file/d/1m6I1qJ1r9JtDTBAfm8YlSA81zH40vQPL/view
-      Unzip the file and create in the C:\tensorflow1\models\research\object_detection\images directory, create a new file named train and create another file named test.
+      Unzip the file and create in the C:\tensorflow1\models\research\object_detection\images directory, create a new file named train         and create another file named test.
       Put train photos and their xml labels into train file and test photos and their xml labels into test file.
       
       # !! YOU CAN CREATE YOUR OWN DATASET USING LABEL IMG IN THE LINK https://github.com/tzutalin/labelImg 
