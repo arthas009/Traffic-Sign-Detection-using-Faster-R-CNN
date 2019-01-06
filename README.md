@@ -135,7 +135,7 @@ Unzip the files and copy them to the C:\tensorflow1\models\research\object_detec
   # 15-) To start training, you must do this;
          Go to the C:\tensorflow1\models\research\object_detection\samples\configs
          Copy faster_rcnn_inception_v2_pets.config and paste it to object_detection\training folder.
-         Open this folder with text editor.
+         Open this file (faster_rcnn...... .config)  with text editor.
          
          Change these lines;
          
