@@ -54,12 +54,26 @@ Unzip the files and copy them to the C:\tensorflow1\models\research\object_detec
       second type this to cmd: python setup.py install
       
 # 10-) Download the train and test set, and their labels from https://drive.google.com/file/d/1m6I1qJ1r9JtDTBAfm8YlSA81zH40vQPL/view
+      This is my own dataset. I collected it from google maps and i labeled them with LABELIMG in the link below.
+      You can reorder the train and test sets arbitrary or can make your own dataset.
       Unzip the file and create in the C:\tensorflow1\models\research\object_detection\images directory, create a new file named train         and create another file named test.
       Put train photos and their xml labels into train file and test photos and their xml labels into test file.
       
       # !! YOU CAN CREATE YOUR OWN DATASET USING LABEL IMG IN THE LINK https://github.com/tzutalin/labelImg 
+      # !!While labeling your images to xml file, make sure you are using the same names and use upper charecters and dont't forget the           names because we are goint the use them in the steps below.
       
-      
+
+# UNTIL HERE YOUR images/training file should be something like this, same for test
+
+![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/sampletraininingset.JPG)
+
+
+# EXAMPLE LABEL IMAGING
+
+![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/samplelabelimage.JPG)
+
+# DON'T FORGET THE CLASSNAMES YOU GIVE WHILE LABELING. WE ARE GOING TO USE SAME NAMES IN THE STEPS BELOW !!
+
 # 11-) To create xml files of all labeled images, make sure you are in tensorflow1 environment and in the object_detection directory in cmd
        Run this command: python xml_to_csv.py
        It should be look like this: (tensorflow1) C:\tensorflow1\models\research\object_detection> python xml_to_csv.py
