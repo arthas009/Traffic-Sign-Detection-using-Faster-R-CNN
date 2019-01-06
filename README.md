@@ -74,7 +74,7 @@ Unzip the files and copy them to the C:\tensorflow1\models\research\object_detec
 
 # DON'T FORGET THE CLASSNAMES YOU GIVE WHILE LABELING. WE ARE GOING TO USE SAME NAMES IN THE STEPS BELOW !!
 
-# 11-) To create xml files of all labeled images, make sure you are in tensorflow1 environment and in the object_detection directory in cmd
+# 11-) To create .csv files of all labeled images, make sure you are in tensorflow1 environment and in the object_detection directory in cmd
        Run this command: python xml_to_csv.py
        It should be look like this: (tensorflow1) C:\tensorflow1\models\research\object_detection> python xml_to_csv.py
        
