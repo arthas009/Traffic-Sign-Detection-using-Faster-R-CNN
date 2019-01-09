@@ -1,7 +1,7 @@
 # Traffic-Sign-Detection-using-Faster-R-CNN
 Turkish Traffic Sign Detection and Classification using Faster R CNN Inception v2
 
-# Step by Step guide Installation on Windows
+# Step by Step guide Installation on Windows. It's a long road, so please stay in patient and do whatever I say in the steps.
 
 # 1-) Install Models from https://github.com/tensorflow/models
 Create a file and name it as 'tensorflow1' in your C:/
