@@ -215,20 +215,25 @@ Unzip the files and copy them to the C:\tensorflow1\models\research\object_detec
  then go to your web browser and type localhost:6006
  (TENSORBOARD İLE LOSS DEĞERLERİNİ TAKİP ETMEK İÇİN BAŞKA BİR CMD EKRANI AÇIN, PYTHONPATHİ BELİRLEYİN, object_detection KLASÖRÜNE CD KOMUTU İLE GİDİN VE tensorboard --logdir=training YAZIN. KOMUT BİTİNCE WEB BROWSERİNİZİ AÇIN VE localhost:6006 YAZIN)
  # 17-) CREATE INFERENCE GRAPH, TYPE THIS COMMAND TO CMD BUT BEFORE RUNNING THE COMMAND, READ THE WARNING BELOW.
+ # 17-) INFERENCE GRAPH OLUŞTURUN. AŞAĞIDAKİ KOMUTU CMD DE ÇALIŞTIRIN FAKAT ÇALIŞTRMADAN ÖNCE UYARIYI OKUYUN.
         python export_inference_graph.py --input_type image_tensor --pipeline_config_path training/faster_rcnn_inception_v2_pets.config --trained_checkpoint_prefix training/model.ckpt-XXXX --output_directory inference_graph
         
         WARNING:
         XXXX SHOULD BE THE NUMBER OF YOUR LAST CHECKPOINT
         YOUR LAST CHECKPOINT IS in training folder. Replace the biggest number of checkpoints with XXXX in the command.
         
+        (XXXX YAZAN YERE training dosyasındaki en sonun checkpoint dosyasının numarasını verin)
   # 18-) To test your model, open cmd and tpye idle
+  # 18-) Modelinizi test etmek için cmd ye idle yazın ve sol üst köşeden Object_detection_image.py dosyasını seçin.
          After idle opened, Select the Object_detection_image.py from the files at upper-left corner.
          
          In the Object_detection_image.py change NUM_CLASSES variable and type how many classes you have
          You can change test image.
          
+         (Object_detection.py dosyasındaki, NUM_CLASSES değişkenine sınıf sayınızı yazın ve test etmek istediğin değişkeninde yolunu aşağısındaki değişkene verin)
          
 # RESULT OF MY OWN DATASET
+# KENDİ VERİSETİMİN SONUÇLARI
 
 ![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/Result/result1.JPG)
 ![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/Result/result2.JPG)
