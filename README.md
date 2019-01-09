@@ -40,7 +40,7 @@ Unzip the files and copy them to the C:\tensorflow1\models\research\object_detec
   If you want to work with cpu, install tensorflow for cpu.
   Make sure all libraries installed successfully
 # 7-) !! IMPORTANT type this command to cmd:
-# set PYTHONPATH=C:\tensorflow1\models;C:\tensorflow1\models\research;C:\tensorflow1\models\research\slim;
+  set PYTHONPATH=C:\tensorflow1\models;C:\tensorflow1\models\research;C:\tensorflow1\models\research\slim
   If you crated your models file in anoter location, change the directory in the command.
   WHENEVER YOU ACTIVATE THE VIRTUAL ENVIRONMENT tensorflow1, YOU NEED TO TYPE THIS COMMAND AGAIN !!!!.
   
@@ -159,7 +159,9 @@ Unzip the files and copy them to the C:\tensorflow1\models\research\object_detec
        TO START TRAINING, TYPE THIS COMMAND TO CMD; python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/faster_rcnn_inception_v2_pets.config
        
        WAIT FOR A WHILE AND WAIT UNTIL YOUR TRAINING ENDS. YOU CAN END YOUR TRAINING ANYTIME. IT PUTS CHECKPOINTS WHILE TRAINING.
-       
+   
+ ![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/training.JPG)  
+
  # 17-) CREATE INFERENCE GRAPH, TYPE THIS COMMAND TO CMD BUT BEFORE RUNNING THE COMMAND, READ THE WARNING BELOW.
         python export_inference_graph.py --input_type image_tensor --pipeline_config_path training/faster_rcnn_inception_v2_pets.config --trained_checkpoint_prefix training/model.ckpt-XXXX --output_directory inference_graph
         
