@@ -54,7 +54,7 @@ Unzip the files and copy them to the C:\tensorflow1\models\research\object_detec
       first type this to cmd: python setup.py build
       second type this to cmd: python setup.py install
       
-# 10-) Download the train and test set, and their labels from https://drive.google.com/file/d/1m6I1qJ1r9JtDTBAfm8YlSA81zH40vQPL/view
+# 10-) Download the train and test set, and their labels from https://drive.google.com/open?id=1ZPJFQLK4sQyXo3iNh9gdteYjizb7VzQm
       This is my own dataset. I collected it from google maps and i labeled them with LABELIMG in the link below.
       You can reorder the train and test sets arbitrary or can make your own dataset.
       Unzip the file and create in the C:\tensorflow1\models\research\object_detection\images directory, create a new file named train         and create another file named test.
@@ -166,7 +166,9 @@ Unzip the files and copy them to the C:\tensorflow1\models\research\object_detec
        WAIT FOR A WHILE AND WAIT UNTIL YOUR TRAINING ENDS. YOU CAN END YOUR TRAINING ANYTIME. IT PUTS CHECKPOINTS WHILE TRAINING.
    
  ![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/training.JPG)  
-
+ 
+ If you want to keep tracking your loss values on tensorboard, open another cmd, set pythonpath and go to the object_detection file and type this tensorboard --logdir=training
+ then go to your web browser and type localhost:6006
  # 17-) CREATE INFERENCE GRAPH, TYPE THIS COMMAND TO CMD BUT BEFORE RUNNING THE COMMAND, READ THE WARNING BELOW.
         python export_inference_graph.py --input_type image_tensor --pipeline_config_path training/faster_rcnn_inception_v2_pets.config --trained_checkpoint_prefix training/model.ckpt-XXXX --output_directory inference_graph
         
