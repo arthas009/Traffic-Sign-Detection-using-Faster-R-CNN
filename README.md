@@ -155,6 +155,11 @@ Unzip the files and copy them to the C:\tensorflow1\models\research\object_detec
                            label_map_path: "C:/tensorflow1/models/research/object_detection/training/labelmap.pbtxt"
 
 # 16-) I KNOW IT TOOK SO LONG BUT BE PATIENT.
+ !! Before start training, open training folder and delete these selected or whatever you have in your folder. Only 4 file unselected in the photo should stay in the file.
+![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/trainingfile.JPG)  
+
+!! Then go to the inference_graph file and delete all files in it
+![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/inferencegraph.jpg)  
 
        TO START TRAINING, TYPE THIS COMMAND TO CMD; python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/faster_rcnn_inception_v2_pets.config
        
