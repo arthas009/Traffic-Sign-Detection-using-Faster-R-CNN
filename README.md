@@ -209,7 +209,7 @@ Unzip the files and copy them to the C:\tensorflow1\models\research\object_detec
    
       (EĞİTİME BAŞLAMAK İÇİN CMD YE ŞUNU YAZIN VE BEKLEYİN: python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/faster_rcnn_inception_v2_pets.config
       EĞİTİM BİTENE KADAR CMD Yİ KAPATMAYIN. EĞİTİMİ İSTEDİĞİNİZ ZAMAN  CMD Yİ KAPATARAK BİTİREBİLİRSİNİZ. MODEL EĞİTİLİRKEN CHECKPOİNTLER OLUŞMAKTADIR)
- ![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/training.JPG)  
+ ![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/img/training.JPG)  
  
  If you want to keep tracking your loss values on tensorboard, open another cmd, set pythonpath and go to the object_detection file and type this tensorboard --logdir=training
  then go to your web browser and type localhost:6006
