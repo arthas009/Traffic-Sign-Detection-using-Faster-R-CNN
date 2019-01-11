@@ -20,7 +20,7 @@ Unzip the file and copy it to C:\tensorflow1\models\research\object_detection fo
 
 # AFTER 2 STEPS, YOUR FILE SHOULD BE LOOK LIKE THIS
 # 2 ADIMIN SONUNDA DOSYANIZIN ŞU TARZ GÖZÜKÜYO OLMASI LAZIM
-![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/modelsfile.JPG)
+![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/img/modelsfile.JPG)
 
 # 3-) Download one of the object_detection.zip or object_detection.rar
 # 3-) YUKARDAKİ object_detection.zip veya object_detection.rar dosyalarından birini indirin.
@@ -28,7 +28,7 @@ Unzip the files and copy them to the C:\tensorflow1\models\research\object_detec
 (DOSYALAR İNDİKTEN SONRA ZİP VEYA RARDAN ÇIKARTIN VE C:\tensorflow1\models\research\object_detection klasörüne atın)
 # AFTER 3. STEPS, YOUR FILE SHOULD LOOK LIKE THIS
 # 3. ADIMDAN SONRA DOSYANIZIN ŞUNUN GİBİ GÖZÜKÜYO OLMASI LAZIM
-![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/object_detectionfile.JPG)
+![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/img/object_detectionfile.JPG)
 
 # 4-) Download and install Anaconda from https://www.anaconda.com/
 # 4-) Anacondayı indirin https://www.anaconda.com/
@@ -61,7 +61,7 @@ Unzip the files and copy them to the C:\tensorflow1\models\research\object_detec
   (Eğer dosyaları başka konumda açtıysanız o konumdaki models\research\slim adresini verin
  !!! CMD Yİ TEKRARDAN HER AÇTIĞINIZDA PYTHONPATHİ TEKRARDAN BELİRLEMENİZ LAZIM. ONUN İÇİN YUKARDAKİ KOMUTU BİR YERE KAYDETSENİZ İYİ OLUR)
   
- ![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/activateenvandpythonpath.JPG)
+ ![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/img/activateenvandpythonpath.JPG)
 
 # 8-) Compile the protobufs, type this command to change directory cd C:\tensorflow1\models\research, 
 # 8-) Protobufları derleyin. Bunun için aşağıdaki komutu yazın. Komutu yazmadan önce, cmd'de cd kullanarak dizinizi C:\tensorflow1\models\research olarak ayarlayın. Eğer dosyaları farklı konumda açtıysanız ona göre dizini değiştirin.
@@ -86,12 +86,12 @@ Unzip the files and copy them to the C:\tensorflow1\models\research\object_detec
 
 # UNTIL HERE YOUR images/train file should be something like this, same for test
 # BU NOKTAYA KADAR, images/train dosyanız aşağıdaki gibi fotoğraflardan ve XML dosyalarından oluşmalıdır. Test klasörüde aynı şekilde.
-![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/sampletraininingset.JPG)
+![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/img/sampletraininingset.JPG)
 
 
 # EXAMPLE LABEL IMAGING
 # ÖRNEK FOTOĞRAF ETİKETLEME İŞLEMİ
-![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/samplelabelimage.JPG)
+![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/img/samplelabelimage.JPG)
 
 # DON'T FORGET THE CLASSNAMES YOU GIVE WHILE LABELING. WE ARE GOING TO USE SAME NAMES IN THE STEPS BELOW !!
 # YAZDIĞINIZ SINIF İSİMLERİNİ UNUTMAYIN. ONLARI İLERDE KULLANACAĞIZ !!
@@ -158,9 +158,9 @@ Unzip the files and copy them to the C:\tensorflow1\models\research\object_detec
    
   # EXAMPLE generate_tfrecord.py and labelmap.pbtxt
   # ÖRNEK generate_tfrecord.py dosyası ve labelmap.pbtxt dosyası
-  ![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/generatetfrecord.JPG)
+  ![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/img/generatetfrecord.JPG)
   
-  ![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/labelmap.pbtx.JPG)
+  ![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/img/labelmap.pbtx.JPG)
    
    
   # 15-) To start training, you must do this;
@@ -196,12 +196,12 @@ Unzip the files and copy them to the C:\tensorflow1\models\research\object_detec
 # 16-) ÇOK UZUN SÜRDÜ BİLİYORUM. SABREDİN.
  !! Before start training, open training folder and delete these selected or whatever you have in your folder. Only 4 file unselected in the photo should stay in the file.
  !! BAŞLAMADAN ÖNCE training KLASÖRÜNDEN AŞAĞIDAKİ SEÇİLİ OLMAYAN DOSYALAR DIŞINDAKİLERİ SİLİN
-![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/trainingfile.JPG)  
+![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/img/trainingfile.JPG)  
 
 !! Then go to the inference_graph file and delete all files in it
 !! GERİ GİDİN VE inference_graph DOSYASINDAKİ HERŞEYİ SİLİN
 
-![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/inferencegraph.jpg)  
+![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/img/inferencegraph.jpg)  
 
        TO START TRAINING, TYPE THIS COMMAND TO CMD; python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/faster_rcnn_inception_v2_pets.config
        
