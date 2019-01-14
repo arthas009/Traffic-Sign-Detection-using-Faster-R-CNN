@@ -6,17 +6,17 @@ Turkish Traffic Sign Detection and Classification using Faster R CNN Inception v
 
 # 1-) Install Models from https://github.com/tensorflow/models as .zip file
 # 1-) (https://github.com/tensorflow/models adresindeki dosyayı .zip olarak indirin)
-Create a file and name it as 'tensorflow1' in your C:/
-Unzip the files you downloaded and name unzipped file as 'models'
-When these steps are finished there should be a path like this 'C:\tensorflow1\models\research\object_detection'
-(C:/ DİZİNİNDE 'tensorflow1' isimli bir dosya açın ve models klasörünü oraya taşıyın
- Tüm bunların sonunda 'C:\tensorflow1\models\research\object_detection' isimli bir klasöre gidiyo olabilmeniz lazım.)
+    Create a file and name it as 'tensorflow1' in your C:/
+    Unzip the files you downloaded and name unzipped file as 'models'
+    When these steps are finished there should be a path like this 'C:\tensorflow1\models\research\object_detection'
+    (C:/ DİZİNİNDE 'tensorflow1' isimli bir dosya açın ve models klasörünü oraya taşıyın
+     Tüm bunların sonunda 'C:\tensorflow1\models\research\object_detection' isimli bir klasöre gidiyo olabilmeniz lazım.)
 
- ' dan 
+
 # 2-) Download Tensorflow FASTER R-CNN API: faster_rcnn_inception_v2_coco from https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md.
 # 2-) https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md ' dan Tensorflow FASTER R-CNN API: faster_rcnn_inception_v2_coco modelini indirin.
-Unzip the file and copy it to C:\tensorflow1\models\research\object_detection folder or copy it to place where unzipped the models file in step 1.
-(ZIP dosyasındakileri çıkartın ve C:\tensorflow1\models\research\object_detection klasörüne veya klasörleri nerde oluşturduysanız oraya atın)
+    Unzip the file and copy it to C:\tensorflow1\models\research\object_detection folder or copy it to place where unzipped the models     file in step 1.
+    (ZIP dosyasındakileri çıkartın ve C:\tensorflow1\models\research\object_detection klasörüne veya klasörleri nerde oluşturduysanız       oraya atın)
 
 # AFTER 2 STEPS, YOUR FILE SHOULD BE LOOK LIKE THIS
 # 2 ADIMIN SONUNDA DOSYANIZIN ŞU TARZ GÖZÜKÜYO OLMASI LAZIM
@@ -24,8 +24,8 @@ Unzip the file and copy it to C:\tensorflow1\models\research\object_detection fo
 
 # 3-) Download one of the object_detection.zip or object_detection.rar
 # 3-) YUKARDAKİ object_detection.zip veya object_detection.rar dosyalarından birini indirin.
-Unzip the files and copy them to the C:\tensorflow1\models\research\object_detection or copy it to place where unzipped the models file in step 1. Replace all files.
-(DOSYALAR İNDİKTEN SONRA ZİP VEYA RARDAN ÇIKARTIN VE C:\tensorflow1\models\research\object_detection klasörüne atın)
+    Unzip the files and copy them to the C:\tensorflow1\models\research\object_detection or copy it to place where unzipped the models     file in step 1. Replace all files.
+    (DOSYALAR İNDİKTEN SONRA ZİP VEYA RARDAN ÇIKARTIN VE C:\tensorflow1\models\research\object_detection klasörüne atın)
 # AFTER 3. STEPS, YOUR FILE SHOULD LOOK LIKE THIS
 # 3. ADIMDAN SONRA DOSYANIZIN ŞUNUN GİBİ GÖZÜKÜYO OLMASI LAZIM
 ![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/img/object_detectionfile.JPG)
@@ -38,35 +38,37 @@ Unzip the files and copy them to the C:\tensorflow1\models\research\object_detec
 
 # 6-) Download and install python libraries needed. First, activate your virtual environment using this command in cmd; activate tensorflow1.
 # 6-) Aşağıdaki Python kütüphanelerini kurun. Kendiniz dışardan başka komutlada kurabilirsiniz. tensorflow1 isimli environmentin açık olması lazım. Bunun için ilk önce cmd ye activate tensorflow1 yazın.
-  It should be look like this; (tensorflow1) C:\>
-   pip install --ignore-installed --upgrade tensorflow-gpu
-   conda install -c anaconda protobuf
-   pip install pillow
-   pip install lxml
-   pip install jupyter
-   pip install matplotlib
-   pip install pandas
-   pip install opencv-python
+    It should be look like this; (tensorflow1) C:\>
+    1-) pip install --ignore-installed --upgrade tensorflow-gpu
+    2-) conda install -c anaconda protobuf
+    3-) pip install pillow
+    4-) pip install lxml
+    5-) pip install jupyter
+    6-) pip install matplotlib
+    7-) pip install pandas
+    8-) pip install opencv-python
   
-  If you get any errors while installing libraries, try to install them from another source.
-  If you want to work with cpu, install tensorflow for cpu.
-  Make sure all libraries installed successfully
-  (tensorflow'u cpu da kullanmak istiyorsanız gpu yerine cpu versiyonunu indirin. Tüm kütüphanelerin düzgün indiğinden emin olun)
+    If you get any errors while installing libraries, try to install them from another source.
+    If you want to work with cpu, install tensorflow for cpu.
+    Make sure all libraries installed successfully
+    (tensorflow'u cpu da kullanmak istiyorsanız gpu yerine cpu versiyonunu indirin. Tüm kütüphanelerin düzgün indiğinden emin olun)
   
 # 7-) !! IMPORTANT type this command to cmd:
 # 8-) !! ÖNEMLİ, cmd ye pythonpathi  belirtmeniz lazım. Aşağıdaki komutu cmd'ye yazın.
-  set PYTHONPATH=C:\tensorflow1\models;C:\tensorflow1\models\research;C:\tensorflow1\models\research\slim
-  If you crated your models file in anoter location, change the directory in the command.
-  WHENEVER YOU ACTIVATE THE VIRTUAL ENVIRONMENT tensorflow1, YOU NEED TO TYPE THIS COMMAND AGAIN !!!!.
-  (Eğer dosyaları başka konumda açtıysanız o konumdaki models\research\slim adresini verin
- !!! CMD Yİ TEKRARDAN HER AÇTIĞINIZDA PYTHONPATHİ TEKRARDAN BELİRLEMENİZ LAZIM. ONUN İÇİN YUKARDAKİ KOMUTU BİR YERE KAYDETSENİZ İYİ OLUR)
+    cmd command: set PYTHONPATH=C:\tensorflow1\models;C:\tensorflow1\models\research;C:\tensorflow1\models\research\slim
+    
+    If you crated your models file in anoter location, change the directory in the command.
+    WHENEVER YOU ACTIVATE THE VIRTUAL ENVIRONMENT tensorflow1, YOU NEED TO TYPE THIS COMMAND AGAIN !!!!.
+    (Eğer dosyaları başka konumda açtıysanız o konumdaki models\research\slim adresini verin
+    !!! CMD Yİ TEKRARDAN HER AÇTIĞINIZDA PYTHONPATHİ TEKRARDAN BELİRLEMENİZ LAZIM. ONUN İÇİN YUKARDAKİ KOMUTU BİR YERE KAYDETSENİZ İYİ     OLUR)
   
  ![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/img/activateenvandpythonpath.JPG)
 
 # 8-) Compile the protobufs, type this command to change directory cd C:\tensorflow1\models\research, 
 # 8-) Protobufları derleyin. Bunun için aşağıdaki komutu yazın. Komutu yazmadan önce, cmd'de cd kullanarak dizinizi C:\tensorflow1\models\research olarak ayarlayın. Eğer dosyaları farklı konumda açtıysanız ona göre dizini değiştirin.
- Then type this to cmd;
-    protoc -- python_out=. .\object_detection\protos\anchor_generator.proto .\object_detection\protos\argmax_matcher.proto          .\object_detection\protos\bipartite_matcher.proto .\object_detection\protos\box_coder.proto .\object_detection\protos\box_predictor.proto .\object_detection\protos\eval.proto .\object_detection\protos\faster_rcnn.proto .\object_detection\protos\faster_rcnn_box_coder.proto .\object_detection\protos\grid_anchor_generator.proto .\object_detection\protos\hyperparams.proto .\object_detection\protos\image_resizer.proto .\object_detection\protos\input_reader.proto .\object_detection\protos\losses.proto .\object_detection\protos\matcher.proto .\object_detection\protos\mean_stddev_box_coder.proto .\object_detection\protos\model.proto .\object_detection\protos\optimizer.proto .\object_detection\protos\pipeline.proto .\object_detection\protos\post_processing.proto .\object_detection\protos\preprocessor.proto .\object_detection\protos\region_similarity_calculator.proto .\object_detection\protos\square_box_coder.proto .\object_detection\protos\ssd.proto .\object_detection\protos\ssd_anchor_generator.proto .\object_detection\protos\string_int_label_map.proto .\object_detection\protos\train.proto .\object_detection\protos\keypoint_box_coder.proto .\object_detection\protos\multiscale_anchor_generator.proto .\object_detection\protos\graph_rewriter.proto
+        Then type this to cmd;
+    cmd command: 
+    protoc -- python_out=. .\object_detection\protos\anchor_generator.proto .\object_detection\protos\argmax_matcher.proto  .\object_detection\protos\bipartite_matcher.proto .\object_detection\protos\box_coder.proto .\object_detection\protos\box_predictor.proto .\object_detection\protos\eval.proto .\object_detection\protos\faster_rcnn.proto .\object_detection\protos\faster_rcnn_box_coder.proto .\object_detection\protos\grid_anchor_generator.proto .\object_detection\protos\hyperparams.proto .\object_detection\protos\image_resizer.proto .\object_detection\protos\input_reader.proto .\object_detection\protos\losses.proto .\object_detection\protos\matcher.proto .\object_detection\protos\mean_stddev_box_coder.proto .\object_detection\protos\model.proto .\object_detection\protos\optimizer.proto .\object_detection\protos\pipeline.proto .\object_detection\protos\post_processing.proto .\object_detection\protos\preprocessor.proto .\object_detection\protos\region_similarity_calculator.proto .\object_detection\protos\square_box_coder.proto .\object_detection\protos\ssd.proto .\object_detection\protos\ssd_anchor_generator.proto .\object_detection\protos\string_int_label_map.proto .\object_detection\protos\train.proto .\object_detection\protos\keypoint_box_coder.proto .\object_detection\protos\multiscale_anchor_generator.proto .\object_detection\protos\graph_rewriter.proto
 
 # 9-) Execute the setup files. Type these commands to cmd;
 # 9-) Kurulum dosyalarını çalıştırın. Aşağıdaki komutları sırası ile yazın.
@@ -82,7 +84,7 @@ Unzip the files and copy them to the C:\tensorflow1\models\research\object_detec
       
       # !! YOU CAN CREATE YOUR OWN DATASET USING LABEL IMG IN THE LINK https://github.com/tzutalin/labelImg 
       # !!While labeling your images to xml file, make sure you are using the same names and use upper charecters and dont't forget the           names because we are goint the use them in the steps below.
-      (Bu benim kendi verisetim. Kendim google maps üzerinden topladım. LABELIMG programı ile tek tek etiketleyip XML dosyalarını çıkarttım. Kendi datasetinizi oluşturup onları kullanabilirsiniz. Fakat etiketlerken kullandığınız sınıf isimlerini unutmayın. Onlar ilerde lazım olacak. Eğitim datasetini C:\tensorflow1\models\research\object_detection\images dizininde train isimli bir dosya oluşturup oraya atın. Test içinde yine aynı dizinde test isimli bir dosya oluşturup test datasetini oraya atın.)
+      (Bu benim kendi verisetim. Kendim google maps üzerinden topladım. LABELIMG programı ile tek tek etiketleyip XML dosyalarını      çıkarttım. Kendi datasetinizi oluşturup onları kullanabilirsiniz. Fakat etiketlerken kullandığınız sınıf isimlerini unutmayın. Onlar ilerde lazım olacak. Eğitim datasetini C:\tensorflow1\models\research\object_detection\images dizininde train isimli bir dosya oluşturup oraya atın. Test içinde yine aynı dizinde test isimli bir dosya oluşturup test datasetini oraya atın.)
 
 # YOU CAN FIND IMAGE LABELING PROGRAM IN REPO 'LABELIMG.ZIP'
 
@@ -134,7 +136,7 @@ Unzip the files and copy them to the C:\tensorflow1\models\research\object_detec
         
  # 13-) Then, open cmd again and activate tensorflow1 environment and go to the directory object_detection using cd command
  # 13-) CMD ye tekrar gelin ve aşağıdaki kodları sırasıyla yazarak input recordlarını derleyin.
-        Type this command; python generate_tfrecord.py --csv_input=images\train_labels.csv --image_dir=images\train --output_path=train.record
+        Type this command; python generate_tfrecord.py --csv_input=images\train_labels.csv --image_dir=images\train --  output_path=train.record
         Then type this command; python generate_tfrecord.py --csv_input=images\test_labels.csv --image_dir=images\test --output_path=test.record
         
         This is how you  crate your data records to give as input.
@@ -196,12 +198,12 @@ Unzip the files and copy them to the C:\tensorflow1\models\research\object_detec
 
 # 16-) I KNOW IT TOOK SO LONG BUT BE PATIENT.
 # 16-) ÇOK UZUN SÜRDÜ BİLİYORUM. SABREDİN.
- !! Before start training, open training folder and delete these selected or whatever you have in your folder. Only 4 file unselected in the photo should stay in the file.
- !! BAŞLAMADAN ÖNCE training KLASÖRÜNDEN AŞAĞIDAKİ SEÇİLİ OLMAYAN DOSYALAR DIŞINDAKİLERİ SİLİN
+    !! Before start training, open training folder and delete these selected or whatever you have in your folder. Only 4 file unselected in the photo should stay in the file.
+    !! BAŞLAMADAN ÖNCE training KLASÖRÜNDEN AŞAĞIDAKİ SEÇİLİ OLMAYAN DOSYALAR DIŞINDAKİLERİ SİLİN
 ![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/img/trainingfile.JPG)  
 
-!! Then go to the inference_graph file and delete all files in it
-!! GERİ GİDİN VE inference_graph DOSYASINDAKİ HERŞEYİ SİLİN
+    !! Then go to the inference_graph file and delete all files in it
+    !! GERİ GİDİN VE inference_graph DOSYASINDAKİ HERŞEYİ SİLİN
 
 ![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/img/inferencegraph.jpg)  
 
@@ -213,9 +215,9 @@ Unzip the files and copy them to the C:\tensorflow1\models\research\object_detec
       EĞİTİM BİTENE KADAR CMD Yİ KAPATMAYIN. EĞİTİMİ İSTEDİĞİNİZ ZAMAN  CMD Yİ KAPATARAK BİTİREBİLİRSİNİZ. MODEL EĞİTİLİRKEN CHECKPOİNTLER OLUŞMAKTADIR)
  ![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/img/training.JPG)  
  
- If you want to keep tracking your loss values on tensorboard, open another cmd, set pythonpath and go to the object_detection file and type this tensorboard --logdir=training
- then go to your web browser and type localhost:6006
- (TENSORBOARD İLE LOSS DEĞERLERİNİ TAKİP ETMEK İÇİN BAŞKA BİR CMD EKRANI AÇIN, PYTHONPATHİ BELİRLEYİN, object_detection KLASÖRÜNE CD KOMUTU İLE GİDİN VE tensorboard --logdir=training YAZIN. KOMUT BİTİNCE WEB BROWSERİNİZİ AÇIN VE localhost:6006 YAZIN)
+     If you want to keep tracking your loss values on tensorboard, open another cmd, set pythonpath and go to the object_detection file      and type this tensorboard --logdir=training
+     then go to your web browser and type localhost:6006
+    (TENSORBOARD İLE LOSS DEĞERLERİNİ TAKİP ETMEK İÇİN BAŞKA BİR CMD EKRANI AÇIN, PYTHONPATHİ BELİRLEYİN, object_detection KLASÖRÜNE CD KOMUTU İLE GİDİN VE tensorboard --logdir=training YAZIN. KOMUT BİTİNCE WEB BROWSERİNİZİ AÇIN VE localhost:6006 YAZIN)
  # 17-) CREATE INFERENCE GRAPH, TYPE THIS COMMAND TO CMD BUT BEFORE RUNNING THE COMMAND, READ THE WARNING BELOW.
  # 17-) INFERENCE GRAPH OLUŞTURUN. AŞAĞIDAKİ KOMUTU CMD DE ÇALIŞTIRIN FAKAT ÇALIŞTRMADAN ÖNCE UYARIYI OKUYUN.
         python export_inference_graph.py --input_type image_tensor --pipeline_config_path training/faster_rcnn_inception_v2_pets.config --trained_checkpoint_prefix training/model.ckpt-XXXX --output_directory inference_graph
