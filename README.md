@@ -84,6 +84,8 @@ Unzip the files and copy them to the C:\tensorflow1\models\research\object_detec
       # !!While labeling your images to xml file, make sure you are using the same names and use upper charecters and dont't forget the           names because we are goint the use them in the steps below.
       (Bu benim kendi verisetim. Kendim google maps üzerinden topladım. LABELIMG programı ile tek tek etiketleyip XML dosyalarını çıkarttım. Kendi datasetinizi oluşturup onları kullanabilirsiniz. Fakat etiketlerken kullandığınız sınıf isimlerini unutmayın. Onlar ilerde lazım olacak. Eğitim datasetini C:\tensorflow1\models\research\object_detection\images dizininde train isimli bir dosya oluşturup oraya atın. Test içinde yine aynı dizinde test isimli bir dosya oluşturup test datasetini oraya atın.)
 
+#YOU CAN FIND IMAGE LABELING PROGRAM IN REPO 'LABELIMG.RAR'
+
 # UNTIL HERE YOUR images/train file should be something like this, same for test
 # BU NOKTAYA KADAR, images/train dosyanız aşağıdaki gibi fotoğraflardan ve XML dosyalarından oluşmalıdır. Test klasörüde aynı şekilde.
 ![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/img/sampletraininingset.JPG)
