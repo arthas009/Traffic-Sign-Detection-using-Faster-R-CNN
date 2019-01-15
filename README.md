@@ -4,6 +4,9 @@ Turkish Traffic Sign Detection and Classification using Faster R CNN Inception v
 # Step by Step guide Installation on Windows. It's a long road, so please stay in patient and do whatever I say in the steps.
 # (ADIM ADIM ANLATIM. DEDİĞİM HERŞEYİ HARFİ HARFİNE UYGULAYIN)
 
+# Youtube link here; https://www.youtube.com/watch?v=hfUQ3X_CFLE. I tried to explaing as possible as I can. Sorry for my bad speech by the way :)
+
+
 # 1-) Install Models from https://github.com/tensorflow/models as .zip file
 # 1-) (https://github.com/tensorflow/models adresindeki dosyayı .zip olarak indirin)
     Create a file and name it as 'tensorflow1' in your C:/
@@ -18,7 +21,7 @@ Turkish Traffic Sign Detection and Classification using Faster R CNN Inception v
     Unzip the file and copy it to C:\tensorflow1\models\research\object_detection folder or copy it to place where unzipped the models     file in step 1.
     (ZIP dosyasındakileri çıkartın ve C:\tensorflow1\models\research\object_detection klasörüne veya klasörleri nerde oluşturduysanız       oraya atın)
 
-# AFTER 2 STEPS, YOUR FILE SHOULD BE LOOK LIKE THIS
+# AFTER 2 STEPS, YOUR FILE SHOULD LOOK LIKE THIS
 # 2 ADIMIN SONUNDA DOSYANIZIN ŞU TARZ GÖZÜKÜYO OLMASI LAZIM
 ![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/img/modelsfile.JPG)
 
@@ -53,8 +56,8 @@ Turkish Traffic Sign Detection and Classification using Faster R CNN Inception v
     Make sure all libraries installed successfully
     (tensorflow'u cpu da kullanmak istiyorsanız gpu yerine cpu versiyonunu indirin. Tüm kütüphanelerin düzgün indiğinden emin olun)
   
-# 7-) !! IMPORTANT type this command to cmd:
-# 8-) !! ÖNEMLİ, cmd ye pythonpathi  belirtmeniz lazım. Aşağıdaki komutu cmd'ye yazın.
+# 7-) !! IMPORTANT. Type command below on cmd to set your PYTHONPATH:
+# 8-) !! ÖNEMLİ, Cmd ye pythonpathi  belirtmeniz lazım. Aşağıdaki komutu cmd'ye yazın.
     cmd command: set PYTHONPATH=C:\tensorflow1\models;C:\tensorflow1\models\research;C:\tensorflow1\models\research\slim
     
     If you crated your models file in anoter location, change the directory in the command.
