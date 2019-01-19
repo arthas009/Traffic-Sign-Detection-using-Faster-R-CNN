@@ -78,8 +78,8 @@ Turkish Traffic Sign Detection and Classification using Faster R CNN Inception v
       First type this to cmd:  python setup.py build
       Second type this to cmd:  python setup.py install
       
-# 10-) Download the train and test set, and their labels from https://drive.google.com/open?id=1ZPJFQLK4sQyXo3iNh9gdteYjizb7VzQm
-# 10-) https://drive.google.com/open?id=1ZPJFQLK4sQyXo3iNh9gdteYjizb7VzQm adresinden Veri setini indirin. Xml dosyaları onların labelları olarak yanlarında bulunmaktadır.
+# 10-) Download the train and test set, and their labels from https://drive.google.com/open?id=1mcevi7aFmhip2W9vRNtVA8sA-jfq8S8W
+# 10-) https://drive.google.com/open?id=1mcevi7aFmhip2W9vRNtVA8sA-jfq8S8W adresinden Veri setini indirin. Xml dosyaları onların labelları olarak yanlarında bulunmaktadır.
       This is my own dataset. I collected it from google maps and i labeled them with LABELIMG in the link below.
       You can reorder the train and test sets arbitrary or can make your own dataset.
       Unzip the file and create in the C:\tensorflow1\models\research\object_detection\images directory, create a new file named train         and create another file named test.
