@@ -25,10 +25,10 @@ Turkish Traffic Sign Detection and Classification using Faster R CNN Inception v
 # 2 ADIMIN SONUNDA DOSYANIZIN ŞU TARZ GÖZÜKÜYO OLMASI LAZIM
 ![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/img/modelsfile.JPG)
 
-# 3-) Download one of the object_detection.zip or object_detection.rar
-# 3-) YUKARDAKİ object_detection.zip veya object_detection.rar dosyalarından birini indirin.
-    Unzip the files and copy them to the C:\tensorflow1\models\research\object_detection or copy it to place where unzipped the models     file in step 1. Replace all files.
-    (DOSYALAR İNDİKTEN SONRA ZİP VEYA RARDAN ÇIKARTIN VE C:\tensorflow1\models\research\object_detection klasörüne atın)
+# 3-) Download one of the object_detection.zip or object_detection.rar Also download graph.pbtxt file 
+# 3-) YUKARDAKİ object_detection.zip veya object_detection.rar dosyalarından birini indirin. graph.pbtxt dosyasınıda indirin.
+    Unzip the files and copy them to the C:\tensorflow1\models\research\object_detection or copy it to place where unzipped the models     file in step 1. Replace all files. copy graph.pbtxt file into object_detection/training file
+    (DOSYALAR İNDİKTEN SONRA ZİP VEYA RARDAN ÇIKARTIN VE C:\tensorflow1\models\research\object_detection klasörüne atın. graph.pbtxt dosyasınıda object_detection/training dosyasına atın)
 # AFTER 3. STEPS, YOUR FILE SHOULD LOOK LIKE THIS
 # 3. ADIMDAN SONRA DOSYANIZIN ŞUNUN GİBİ GÖZÜKÜYO OLMASI LAZIM
 ![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/img/object_detectionfile.JPG)
