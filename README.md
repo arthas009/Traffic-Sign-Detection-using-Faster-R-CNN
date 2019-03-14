@@ -248,3 +248,6 @@ Turkish Traffic Sign Detection and Classification using Faster R CNN Inception v
 ![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/Result/testtgirisiolmayan2.JPG)
 ![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/Result/test1all.jpg)
 ![alt text](https://github.com/arthas009/Traffic-Sign-Detection-using-Faster-R-CNN/blob/master/Result/testall1correcting.JPG)
+
+# IF YOU WANT TO REACH mAP VALUES, SEE MY QUESTION ON STACKOVERFLOW https://stackoverflow.com/questions/55140300/tensorflow-object-detection-api-only-shows-loss-value-how-to-get-map-value
+
