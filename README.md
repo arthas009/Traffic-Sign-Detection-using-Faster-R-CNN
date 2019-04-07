@@ -172,6 +172,7 @@ Turkish Traffic Sign Detection and Classification using Faster R CNN Inception v
    
   # 15-) To start training, you must do this;
   # 15-) Eğitimi başlatmak için bunu yapmalısınız.
+         Go to your faster_rcnn_inception_v2 file and copy pipeline.config file to object_detection/training folder
          Go to the C:\tensorflow1\models\research\object_detection\samples\configs
          Copy  faster_rcnn_inception_v2_pets.config and paste it to object_detection\training folder.
          Open this file (faster_rcnn...... .config)  with text editor.
